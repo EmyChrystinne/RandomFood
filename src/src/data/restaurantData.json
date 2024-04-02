@@ -1,0 +1,461 @@
+[
+    {
+        "NOME": "PONTO DO SUCO",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "TODAS",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "PADARIA JARAGUA",
+        "CATEGORIA": "PADARIA",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "TODAS",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "SABOR BAKANA",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "TODAS",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "BOTECO DO URUGUA",
+        "CATEGORIA": "BOTECO",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "GALPÃO JARAGUA",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "TOCA DO CALANGO",
+        "CATEGORIA": "BOTECO",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "CASA DE MAINHA",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "CADILAR(SUJINHO)",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "ALMOÇO",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "AUGUSTO",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "PARMEGIANO",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "QUATRO",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "MC DONALDS",
+        "CATEGORIA": "FAST_FOOD",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "TODAS",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "BURGUER KING",
+        "CATEGORIA": "FAST_FOOD",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "TODAS",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "BOBS",
+        "CATEGORIA": "FAST_FOOD",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "TODAS",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "PAJU PASTEIS",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "SARA'S ESFIRRAS",
+        "CATEGORIA": "FAST_FOOD",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "HABIBS",
+        "CATEGORIA": "FAST_FOOD",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "SAL E BRASA",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "OUTBACK",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "QUATRO",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "MR SHAKE",
+        "CATEGORIA": "CAFETERIA_E_SORVETERIA",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "TODAS",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "PAPA FRITAS",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "BLACK BEEF",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "GENERAL BURGUER",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "SUNREALE",
+        "CATEGORIA": "PIZZA",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "ALTA"
+    },
+    {
+        "NOME": "KI DELICIA",
+        "CATEGORIA": "PIZZA",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "ALTA"
+    },
+
+    {
+        "NOME": "COCO NUT",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "QUATRO",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "PIRATAS",
+        "CATEGORIA": "PIZZA",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "MERCATTO",
+        "CATEGORIA": "PIZZA",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "SALLON",
+        "CATEGORIA": "PIZZA",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "HAVANA",
+        "CATEGORIA": "CAFETERIA_E_SORVETERIA",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "CHIC",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "ALMOÇO",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "PASSAPORTE DO GAUCHO",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "SODIÊ DOCES",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "SUBWAY",
+        "CATEGORIA": "FAST_FOOD",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "FIVE SPORTS BAR",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "QUATRO",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "KOPENHAGEN",
+        "CATEGORIA": "CAFETERIA_E_SORVETERIA",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "CABOCO FAMINTO",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "CHURRASCARIA DO GAUCHO",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "MAXI PIZZARIA",
+        "CATEGORIA": "PIZZA",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "LUGANO",
+        "CATEGORIA": "CAFETERIA_E_SORVETERIA",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "GELATO BORELLI",
+        "CATEGORIA": "CAFETERIA_E_SORVETERIA",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "DUCKBILL",
+        "CATEGORIA": "CAFETERIA_E_SORVETERIA",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "CAFÉ DO PORTO",
+        "CATEGORIA": "CAFETERIA_E_SORVETERIA",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "TSB",
+        "CATEGORIA": "BOTECO",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "PALATO",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "QUATRO",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "MASSAGUERINHA",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "QUATRO",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "ALBERT'S",
+        "CATEGORIA": "FAST_FOOD",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "MARIA COXINHA",
+        "CATEGORIA": "FAST_FOOD",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "CASA DA MACAXEIRA",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA"
+    },
+
+    {
+        "NOME": "PIPA",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "KASCÃO",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "BARRICAS",
+        "CATEGORIA": "BOTECO",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "STELLA",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "QUATRO",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "BVERRINES",
+        "CATEGORIA": "CAFETERIA_E_SORVETERIA",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "CUCA POP",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "MAGNOS BURGUER",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "ALTA"
+    },
+    {
+        "NOME": "VILA NOVA",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "ALMOÇO",
+        "LOCALIZAÇÃO": "ALTA"
+    },
+    {
+        "NOME": "GIRAFFAS",
+        "CATEGORIA": "FAST_FOOD",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "DON PASTELLO",
+        "CATEGORIA": "FAST_FOOD",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "KORBAN",
+        "CATEGORIA": "FAST_FOOD",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "ALMOÇO",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "REI DO HAMBURGUER",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "UM",
+        "REFEIÇÃO": "ALMOÇO_E_JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "TENDA DOS SABORES",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "ALTA"
+    },
+    {
+        "NOME": "GENI MASSAS",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO",
+        "LOCALIZAÇÃO": "ALTA"
+    },
+    {
+        "NOME": "MARIAH",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "ALMOÇO",
+        "LOCALIZAÇÃO": "TODAS"
+    },
+    {
+        "NOME": "JB PASSA",
+        "CATEGORIA": "LANCHONETE",
+        "PREÇO_MEDIO": "TRES",
+        "REFEIÇÃO": "JANTA",
+        "LOCALIZAÇÃO": "BAIXA"
+    },
+    {
+        "NOME": "COMEDORIA JARAGUA",
+        "CATEGORIA": "RESTAURANTE",
+        "PREÇO_MEDIO": "DOIS",
+        "REFEIÇÃO": "ALMOÇO",
+        "LOCALIZAÇÃO": "BAIXA"
+    }
+]
+
+
+
