@@ -2,24 +2,24 @@
 const restaurantData = require('../data/restaurantData.json');
 
 // Rota para buscar uma seleção aleatória de restaurantes
-router.get('/restaurants/random', (req, res) => {
-  try {
-    // Obtém o número total de restaurantes
-    const totalRestaurants = restaurantService.getAllRestaurants().length;
+// router.get('/restaurants/random', (req, res) => {
+//   try {
+//     // Obtém o número total de restaurantes
+//     const totalRestaurants = restaurantService.getAllRestaurants().length;
 
-    // Gera um índice aleatório dentro do intervalo do número total de restaurantes
-    const randomIndex = Math.floor(Math.random() * totalRestaurants);
+//     // Gera um índice aleatório dentro do intervalo do número total de restaurantes
+//     const randomIndex = Math.floor(Math.random() * totalRestaurants);
 
-    // Obtém o restaurante aleatório com base no índice gerado
-    const randomRestaurant = restaurantService.getAllRestaurants()[randomIndex];
+//     // Obtém o restaurante aleatório com base no índice gerado
+//     const randomRestaurant = restaurantService.getAllRestaurants()[randomIndex];
 
-    // Retorna o restaurante aleatório como resposta
-    res.json(randomRestaurant);
-  } catch (error) {
-    console.error('Erro ao buscar seleção aleatória de restaurantes:', error);
-    res.status(500).json({ message: 'Erro ao buscar seleção aleatória de restaurantes' });
-  }
-});
+//     // Retorna o restaurante aleatório como resposta
+//     res.json(randomRestaurant);
+//   } catch (error) {
+//     console.error('Erro ao buscar seleção aleatória de restaurantes:', error);
+//     res.status(500).json({ message: 'Erro ao buscar seleção aleatória de restaurantes' });
+//   }
+// });
 
 // Função para buscar todos os restaurantes
 const getAllRestaurants = () => {

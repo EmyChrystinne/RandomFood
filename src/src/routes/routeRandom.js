@@ -17,4 +17,4 @@ router.get('/restaurants/random', (req, res) => {
   }
 });
 
-module.exports = router;
+module.exports = routes;
