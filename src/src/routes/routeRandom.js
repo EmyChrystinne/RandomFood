@@ -1,10 +1,6 @@
-// routes.js
-
 const express = require('express');
 const router = express.Router();
-const routes = require('./routes.js');
-
-
+const restaurantService = require('../services/restaurantServices.js');
 
 // Rota para retornar uma seleção aleatória de restaurantes
 router.get('/restaurants/random', (req, res) => {
@@ -17,4 +13,4 @@ router.get('/restaurants/random', (req, res) => {
   }
 });
 
-module.exports = routes;
+module.exports = router;
