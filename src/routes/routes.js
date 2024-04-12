@@ -4,6 +4,7 @@ const express = require('express');
 const router = express.Router();
 const restaurantService = require('../services/restaurantServices.js');
 
+let routeData = []
 
 // Rota para buscar uma seleção aleatória de restaurantes
 router.get('/restaurants/random', (req, res) => {
@@ -70,6 +71,7 @@ router.get('/restaurants', (req, res) => {
       }
   
       // Retornar os restaurantes filtrados
+      routeData = filteredRestaurants
       res.json(filteredRestaurants);
     } catch (error) {
       console.error('Erro ao filtrar restaurantes:', error);
@@ -81,11 +83,10 @@ router.get('/restaurants', (req, res) => {
 
 
 router.get('/restaurants/restaurantRoute', (req, res) => {
+
     try {
       const { route } = req.query; // Obtenha os dados da rota da query
       console.log('Rota1:', route);
-
-      
 
       // Selecione aleatoriamente um objeto da rota
       const randomIndex = Math.floor(Math.random() * routeData.length);
