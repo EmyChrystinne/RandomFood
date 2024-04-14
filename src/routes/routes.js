@@ -41,33 +41,33 @@ router.get('/restaurants', (req, res) => {
   router.get('/restaurants/filter', (req, res) => {
     try {
       // Extrair os parâmetros de filtro da query string da URL
-      const { category, meal, price, location } = req.query;
+      const { Categoria, Refeição, Preço, Localização } = req.query;
   
       // Inicializar variável para armazenar os restaurantes filtrados
       let filteredRestaurants = restaurantService.getAllRestaurants();
   
       // Aplicar filtro por categoria, se fornecido
-      if (category) {
-        const categories = category.split(','); // Se houver múltiplas categorias separadas por vírgula
-        filteredRestaurants = filteredRestaurants.filter(restaurant => categories.includes(restaurant.CATEGORIA));
+      if (Categoria) {
+        const categories = Categoria.split(','); // Se houver múltiplas categorias separadas por vírgula
+        filteredRestaurants = filteredRestaurants.filter(restaurant => categories.includes(restaurant.Categoria));
       }
   
       // Aplicar filtro por refeição, se fornecido
-      if (meal) {
-        const meals = meal.split(','); // Se houver múltiplas refeições separadas por vírgula
-        filteredRestaurants = filteredRestaurants.filter(restaurant => meals.includes(restaurant.REFEIÇÃO));
+      if (Refeição) {
+        const meals = Refeição.split(','); // Se houver múltiplas refeições separadas por vírgula
+        filteredRestaurants = filteredRestaurants.filter(restaurant => meals.includes(restaurant.Refeição));
       }
   
       // Aplicar filtro por PREÇO_MÉDIO, se fornecido
-      if (price) {
-        const prices = price.split(','); // Se houver múltiplos preços separados por vírgula
-        filteredRestaurants = filteredRestaurants.filter(restaurant => prices.includes(restaurant.PREÇO_MEDIO)); // Verifique se o preço está incluído na lista de preços fornecida
+      if (Preço) {
+        const Preços = Preço.split(','); // Se houver múltiplos preços separados por vírgula
+        filteredRestaurants = filteredRestaurants.filter(restaurant => Preços.includes(restaurant.Preço)); // Verifique se o preço está incluído na lista de preços fornecida
       }
   
       // Aplicar filtro por localização, se fornecido
-      if (location) {
-        const locations = location.split(','); // Se houver múltiplas localizações separadas por vírgula
-        filteredRestaurants = filteredRestaurants.filter(restaurant => locations.includes(restaurant.LOCALIZAÇÃO));
+      if (Localização) {
+        const Localizaçãos = Localização.split(','); // Se houver múltiplas localizações separadas por vírgula
+        filteredRestaurants = filteredRestaurants.filter(restaurant => Localização.includes(restaurant.Localização));
       }
   
       // Retornar os restaurantes filtrados
