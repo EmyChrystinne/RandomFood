@@ -21,21 +21,21 @@
     "Localização": "Parte Baixa"
   },
   {
-    "NOME": "Padaria JARAGUA",
+    "NOME": "PANIFICAÇÃO JARAGUÁ",
     "Categoria": "Padaria",
     "Preço": "R$50-R$100",
     "Refeição": "Café da Manhã",
     "Localização": "Parte Baixa"
   },
   {
-    "NOME": "Padaria JARAGUA",
+    "NOME": "PANIFICAÇÃO JARAGUÁ",
     "Categoria": "Padaria",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "NOME": "Padaria JARAGUA",
+    "NOME": "PANIFICAÇÃO JARAGUÁ",
     "Categoria": "Padaria",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
@@ -63,14 +63,14 @@
     "Localização": "Parte Baixa"
   },
   {
-    "NOME": "Boteco DO URUGUA",
+    "NOME": "BOTECO DO URUGUA",
     "Categoria": "Boteco",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "NOME": "Boteco DO URUGUA",
+    "NOME": "BOTECO DO URUGUA",
     "Categoria": "Boteco",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
@@ -441,7 +441,7 @@
     "Localização": "Parte Baixa"
   },
   {
-    "NOME": "COCO NUT",
+    "NOME": "COCONUT",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Janta",
