@@ -1,1007 +1,1000 @@
 [
   {
-    "Nome": "PONTO DO SUCO",
+    "NOME": "PONTO DO SUCO",
     "Categoria": "Lanchonete",
     "Preço": "Até R$50",
     "Refeição": "Café da Manhã",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "PONTO DO SUCO",
+    "NOME": "PONTO DO SUCO",
     "Categoria": "Lanchonete",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "PONTO DO SUCO",
+    "NOME": "PONTO DO SUCO",
     "Categoria": "Lanchonete",
     "Preço": "Até R$50",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "Padaria JARAGUA",
+    "NOME": "Padaria JARAGUA",
     "Categoria": "Padaria",
     "Preço": "R$50-R$100",
     "Refeição": "Café da Manhã",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "Padaria JARAGUA",
+    "NOME": "Padaria JARAGUA",
     "Categoria": "Padaria",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "Padaria JARAGUA",
+    "NOME": "Padaria JARAGUA",
     "Categoria": "Padaria",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "SABOR BAKANA",
+    "NOME": "SABOR BAKANA",
     "Categoria": "Lanchonete",
     "Preço": "Até R$50",
     "Refeição": "Café da Manhã",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "SABOR BAKANA",
+    "NOME": "SABOR BAKANA",
     "Categoria": "Lanchonete",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "SABOR BAKANA",
+    "NOME": "SABOR BAKANA",
     "Categoria": "Lanchonete",
     "Preço": "Até R$50",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "Boteco DO URUGUA",
+    "NOME": "Boteco DO URUGUA",
     "Categoria": "Boteco",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "Boteco DO URUGUA",
+    "NOME": "Boteco DO URUGUA",
     "Categoria": "Boteco",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "GALPÃO JARAGUA",
+    "NOME": "GALPÃO JARAGUA",
     "Categoria": "Lanchonete",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "GALPÃO JARAGUA",
+    "NOME": "GALPÃO JARAGUA",
     "Categoria": "Lanchonete",
     "Preço": "Até R$50",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "TOCA DO CALANGO",
+    "NOME": "TOCA DO CALANGO",
     "Categoria": "Boteco",
     "Preço": "R$100-R$200",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "TOCA DO CALANGO",
+    "NOME": "TOCA DO CALANGO",
     "Categoria": "Boteco",
     "Preço": "R$100-R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "CASA DE MAINHA",
+    "NOME": "CASA DE MAINHA",
     "Categoria": "Restaurante",
     "Preço": "R$100-R$200",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "CASA DE MAINHA",
+    "NOME": "CASA DE MAINHA",
     "Categoria": "Restaurante",
     "Preço": "R$100-R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "CADILAR(SUJINHO)",
+    "NOME": "CADILAR(SUJINHO)",
     "Categoria": "Lanchonete",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "AUGUSTO",
+    "NOME": "AUGUSTO",
     "Categoria": "Restaurante",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "AUGUSTO",
+    "NOME": "AUGUSTO",
     "Categoria": "Restaurante",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "PARMEGIANO",
+    "NOME": "PARMEGIANO",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Almoço",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "PARMEGIANO",
+    "NOME": "PARMEGIANO",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "MC DONALDS",
+    "NOME": "MC DONALDS",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Café da Manhã",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "MC DONALDS",
+    "NOME": "MC DONALDS",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "MC DONALDS",
+    "NOME": "MC DONALDS",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Janta",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "MC DONALDS",
-    "Categoria": "Fast-food",
-    "Preço": "Até R$50",
-    "Refeição": "Café da Manhã",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "MC DONALDS",
-    "Categoria": "Fast-food",
-    "Preço": "Até R$50",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "MC DONALDS",
-    "Categoria": "Fast-food",
-    "Preço": "Até R$50",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "BURGUER KING",
-    "Categoria": "Fast-food",
-    "Preço": "Até R$50",
-    "Refeição": "Almoço",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "BURGUER KING",
-    "Categoria": "Fast-food",
-    "Preço": "Até R$50",
-    "Refeição": "Café da Manhã",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "BURGUER KING",
-    "Categoria": "Fast-food",
-    "Preço": "Até R$50",
-    "Refeição": "Janta",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "BURGUER KING",
+    "NOME": "MC DONALDS",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Café da Manhã",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "BURGUER KING",
+    "NOME": "MC DONALDS",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "BURGUER KING",
+    "NOME": "MC DONALDS",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "BOBS",
+    "NOME": "BURGUER KING",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "BOBS",
+    "NOME": "BURGUER KING",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
-    "Refeição": "Janta",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "BOBS",
-    "Categoria": "Fast-food",
-    "Preço": "Até R$50",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "BOBS",
-    "Categoria": "Fast-food",
-    "Preço": "Até R$50",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "PAJU PASTEIS",
-    "Categoria": "Lanchonete",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "PAJU PASTEIS",
-    "Categoria": "Lanchonete",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "SARA'S ESFIRRAS",
-    "Categoria": "Fast-food",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "SARA'S ESFIRRAS",
-    "Categoria": "Fast-food",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "HABIBS",
-    "Categoria": "Fast-food",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "HABIBS",
-    "Categoria": "Fast-food",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "SAL E BRASA",
-    "Categoria": "Restaurante",
-    "Preço": "R$100-R$200",
-    "Refeição": "Almoço",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "SAL E BRASA",
-    "Categoria": "Restaurante",
-    "Preço": "R$100-R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "SAL E BRASA",
-    "Categoria": "Restaurante",
-    "Preço": "R$100-R$200",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "SAL E BRASA",
-    "Categoria": "Restaurante",
-    "Preço": "R$100-R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "OUTBACK",
-    "Categoria": "Restaurante",
-    "Preço": "Acima de R$200",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "OUTBACK",
-    "Categoria": "Restaurante",
-    "Preço": "Acima de R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "MR SHAKE",
-    "Categoria": "Cafeteria_e_Sorveteria",
-    "Preço": "R$50-R$100",
     "Refeição": "Café da Manhã",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "MR SHAKE",
-    "Categoria": "Cafeteria_e_Sorveteria",
-    "Preço": "R$50-R$100",
+    "NOME": "BURGUER KING",
+    "Categoria": "Fast-food",
+    "Preço": "Até R$50",
+    "Refeição": "Janta",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "BURGUER KING",
+    "Categoria": "Fast-food",
+    "Preço": "Até R$50",
     "Refeição": "Café da Manhã",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "MR SHAKE",
-    "Categoria": "Cafeteria_e_Sorveteria",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "MR SHAKE",
-    "Categoria": "Cafeteria_e_Sorveteria",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "MR SHAKE",
-    "Categoria": "Cafeteria_e_Sorveteria",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "MR SHAKE",
-    "Categoria": "Cafeteria_e_Sorveteria",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "PAPA FRITAS",
-    "Categoria": "Lanchonete",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "BLACK BEEF",
-    "Categoria": "Lanchonete",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "BLACK BEEF",
-    "Categoria": "Lanchonete",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "GENERAL BURGUER",
-    "Categoria": "Lanchonete",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "SUNREALE",
-    "Categoria": "Pizza",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "KI DELICIA",
-    "Categoria": "Pizza",
-    "Preço": "R$100-R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "COCONUT",
-    "Categoria": "Restaurante",
-    "Preço": "Acima de R$200",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "COCO NUT",
-    "Categoria": "Restaurante",
-    "Preço": "Acima de R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "PIRATAS",
-    "Categoria": "Pizza",
-    "Preço": "R$100-R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "PIRATAS",
-    "Categoria": "Pizza",
-    "Preço": "R$100-R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "MERCATTO",
-    "Categoria": "Pizza",
-    "Preço": "R$100-R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "SALLON",
-    "Categoria": "Pizza",
-    "Preço": "R$100-R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "HAVANNA",
-    "Categoria": "Cafeteria",
-    "Preço": "R$100-R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "CHIC",
-    "Categoria": "Restaurante",
+    "NOME": "BURGUER KING",
+    "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "PASSAPORTE DO GAUCHO",
-    "Categoria": "Lanchonete",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "PASSAPORTE DO GAUCHO",
-    "Categoria": "Lanchonete",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "SODIÊ DOCES",
-    "Categoria": "Cafeteria",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "SODIÊ DOCES",
-    "Categoria": "Cafeteria",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "SUBWAY",
+    "NOME": "BURGUER KING",
     "Categoria": "Fast-food",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "SUBWAY",
-    "Categoria": "Fast-food",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "SUBWAY",
-    "Categoria": "Fast-food",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "SUBWAY",
-    "Categoria": "Fast-food",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "FIVE SPORTS BAR",
-    "Categoria": "Restaurante",
-    "Preço": "Acima de R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "FIVE SPORTS BAR",
-    "Categoria": "Restaurante",
-    "Preço": "Acima de R$200",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "KOPENHAGEN",
-    "Categoria": "Cafeteria",
-    "Preço": "R$100-R$200",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "KOPENHAGEN",
-    "Categoria": "Cafeteria",
-    "Preço": "R$100-R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "CABOCO FAMINTO",
-    "Categoria": "Restaurante",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "CABOCO FAMINTO",
-    "Categoria": "Restaurante",
-    "Preço": "R$50-R$100",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "CABOCO FAMINTO",
-    "Categoria": "Restaurante",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "CABOCO FAMINTO",
-    "Categoria": "Restaurante",
-    "Preço": "R$50-R$100",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "CHURRASCARIA DO GAUCHO",
-    "Categoria": "Restaurante",
-    "Preço": "R$100-R$200",
-    "Refeição": "Almoço",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "CHURRASCARIA DO GAUCHO",
-    "Categoria": "Restaurante",
-    "Preço": "R$100-R$200",
-    "Refeição": "Almoço",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "CHURRASCARIA DO GAUCHO",
-    "Categoria": "Restaurante",
-    "Preço": "R$100-R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "CHURRASCARIA DO GAUCHO",
-    "Categoria": "Restaurante",
-    "Preço": "R$100-R$200",
-    "Refeição": "Janta",
-    "Localização": "Parte Baixa"
-  },
-  {
-    "Nome": "MAX PIZZARIA",
-    "Categoria": "Pizza",
     "Preço": "Até R$50",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "LUGANO",
-    "Categoria": "Cafeteria",
+    "NOME": "BOBS",
+    "Categoria": "Fast-food",
+    "Preço": "Até R$50",
+    "Refeição": "Almoço",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "BOBS",
+    "Categoria": "Fast-food",
+    "Preço": "Até R$50",
+    "Refeição": "Janta",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "BOBS",
+    "Categoria": "Fast-food",
+    "Preço": "Até R$50",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "BOBS",
+    "Categoria": "Fast-food",
+    "Preço": "Até R$50",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "PAJU PASTEIS",
+    "Categoria": "Lanchonete",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "PAJU PASTEIS",
+    "Categoria": "Lanchonete",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "GELATO BORELLI",
+    "NOME": "SARA'S ESFIRRAS",
+    "Categoria": "Fast-food",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "SARA'S ESFIRRAS",
+    "Categoria": "Fast-food",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "HABIBS",
+    "Categoria": "Fast-food",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "HABIBS",
+    "Categoria": "Fast-food",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "SAL E BRASA",
+    "Categoria": "Restaurante",
+    "Preço": "R$100-R$200",
+    "Refeição": "Almoço",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "SAL E BRASA",
+    "Categoria": "Restaurante",
+    "Preço": "R$100-R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "SAL E BRASA",
+    "Categoria": "Restaurante",
+    "Preço": "R$100-R$200",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "SAL E BRASA",
+    "Categoria": "Restaurante",
+    "Preço": "R$100-R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "OUTBACK",
+    "Categoria": "Restaurante",
+    "Preço": "Acima de R$200",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "OUTBACK",
+    "Categoria": "Restaurante",
+    "Preço": "Acima de R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "MR SHAKE",
     "Categoria": "Sorveteria",
-    "Preço": "R$100-R$200",
-    "Refeição": "Almoço_E_Janta",
+    "Preço": "R$50-R$100",
+    "Refeição": "Café da Manhã",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "MR SHAKE",
+    "Categoria": "Sorveteria",
+    "Preço": "R$50-R$100",
+    "Refeição": "Café da Manhã",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "GELATO BORELLI",
+    "NOME": "MR SHAKE",
     "Categoria": "Sorveteria",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "MR SHAKE",
+    "Categoria": "Sorveteria",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "MR SHAKE",
+    "Categoria": "Sorveteria",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "MR SHAKE",
+    "Categoria": "Sorveteria",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "PAPA FRITAS",
+    "Categoria": "Lanchonete",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "BLACK BEEF",
+    "Categoria": "Lanchonete",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "BLACK BEEF",
+    "Categoria": "Lanchonete",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "GENERAL BURGUER",
+    "Categoria": "Lanchonete",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "SUNREALE",
+    "Categoria": "Pizza",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "KI DELICIA",
+    "Categoria": "Pizza",
+    "Preço": "R$100-R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "COCONUT",
+    "Categoria": "Restaurante",
+    "Preço": "Acima de R$200",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "COCO NUT",
+    "Categoria": "Restaurante",
+    "Preço": "Acima de R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "PIRATAS",
+    "Categoria": "Pizza",
+    "Preço": "R$100-R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "PIRATAS",
+    "Categoria": "Pizza",
+    "Preço": "R$100-R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "MERCATTO",
+    "Categoria": "Pizza",
+    "Preço": "R$100-R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "SALLON",
+    "Categoria": "Pizza",
+    "Preço": "R$100-R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "HAVANNA",
+    "Categoria": "Cafeteria",
+    "Preço": "R$100-R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "CHIC",
+    "Categoria": "Restaurante",
+    "Preço": "Até R$50",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "PASSAPORTE DO GAUCHO",
+    "Categoria": "Lanchonete",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "PASSAPORTE DO GAUCHO",
+    "Categoria": "Lanchonete",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "SODIÊ DOCES",
+    "Categoria": "Cafeteria",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "SODIÊ DOCES",
+    "Categoria": "Cafeteria",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "SUBWAY",
+    "Categoria": "Fast-food",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "SUBWAY",
+    "Categoria": "Fast-food",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "SUBWAY",
+    "Categoria": "Fast-food",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "SUBWAY",
+    "Categoria": "Fast-food",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "FIVE SPORTS BAR",
+    "Categoria": "Restaurante",
+    "Preço": "Acima de R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "FIVE SPORTS BAR",
+    "Categoria": "Restaurante",
+    "Preço": "Acima de R$200",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "KOPENHAGEN",
+    "Categoria": "Cafeteria",
     "Preço": "R$100-R$200",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "GELATO BORELLI",
+    "NOME": "KOPENHAGEN",
+    "Categoria": "Cafeteria",
+    "Preço": "R$100-R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "CABOCO FAMINTO",
+    "Categoria": "Restaurante",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "CABOCO FAMINTO",
+    "Categoria": "Restaurante",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "CABOCO FAMINTO",
+    "Categoria": "Restaurante",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "CABOCO FAMINTO",
+    "Categoria": "Restaurante",
+    "Preço": "R$50-R$100",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "CHURRASCARIA DO GAUCHO",
+    "Categoria": "Restaurante",
+    "Preço": "R$100-R$200",
+    "Refeição": "Almoço",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "CHURRASCARIA DO GAUCHO",
+    "Categoria": "Restaurante",
+    "Preço": "R$100-R$200",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "CHURRASCARIA DO GAUCHO",
+    "Categoria": "Restaurante",
+    "Preço": "R$100-R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "CHURRASCARIA DO GAUCHO",
+    "Categoria": "Restaurante",
+    "Preço": "R$100-R$200",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "MAX PIZZARIA",
+    "Categoria": "Pizza",
+    "Preço": "Até R$50",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "LUGANO",
+    "Categoria": "Cafeteria",
+    "Preço": "R$50-R$100",
+    "Refeição": "Janta",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "GELATO BORELLI",
     "Categoria": "Sorveteria",
     "Preço": "R$100-R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "CAFÉ DO PORTO",
+    "NOME": "GELATO BORELLI",
+    "Categoria": "Sorveteria",
+    "Preço": "R$100-R$200",
+    "Refeição": "Almoço",
+    "Localização": "Parte Baixa"
+  },
+  {
+    "NOME": "CAFÉ DO PORTO",
     "Categoria": "Cafeteria",
     "Preço": "R$100-R$200",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "CAFÉ DO PORTO",
+    "NOME": "CAFÉ DO PORTO",
     "Categoria": "Cafeteria",
     "Preço": "R$100-R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "TSB",
+    "NOME": "TSB",
     "Categoria": "Boteco",
     "Preço": "R$100-R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "PALATO",
+    "NOME": "PALATO",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "PALATO",
+    "NOME": "PALATO",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "PALATO",
+    "NOME": "PALATO",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Café da Manhã",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "MASSAGUERINHA",
+    "NOME": "MASSAGUERINHA",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "MASSAGUERINHA",
+    "NOME": "MASSAGUERINHA",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "ALBERT'S",
+    "NOME": "ALBERT'S",
     "Categoria": "Fast-food",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "ALBERT'S",
+    "NOME": "ALBERT'S",
     "Categoria": "Fast-food",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "MARIA COXINHA",
+    "NOME": "MARIA COXINHA",
     "Categoria": "Fast-food",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "MARIA COXINHA",
+    "NOME": "MARIA COXINHA",
     "Categoria": "Fast-food",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "CASA DA MACAXEIRA",
+    "NOME": "CASA DA MACAXEIRA",
     "Categoria": "Restaurante",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "CASA DA MACAXEIRA",
+    "NOME": "CASA DA MACAXEIRA",
     "Categoria": "Restaurante",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "PIPA",
+    "NOME": "PIPA",
     "Categoria": "Restaurante",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "PIPA",
+    "NOME": "PIPA",
     "Categoria": "Restaurante",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "KASCÃO",
+    "NOME": "KASCÃO",
     "Categoria": "Lanchonete",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "KASCÃO",
+    "NOME": "KASCÃO",
     "Categoria": "Lanchonete",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "BARRICAS",
+    "NOME": "BARRICAS",
     "Categoria": "Boteco",
     "Preço": "R$100-R$200",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "BARRICAS",
+    "NOME": "BARRICAS",
     "Categoria": "Boteco",
     "Preço": "R$100-R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "STELLA",
+    "NOME": "STELLA",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "STELLA",
+    "NOME": "STELLA",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Almoço",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "STELLA",
+    "NOME": "STELLA",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "STELLA",
+    "NOME": "STELLA",
     "Categoria": "Restaurante",
     "Preço": "Acima de R$200",
     "Refeição": "Janta",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "BVERRINES",
+    "NOME": "BVERRINES",
     "Categoria": "Cafeteria",
     "Preço": "R$100-R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "BVERRINES",
+    "NOME": "BVERRINES",
     "Categoria": "Cafeteria",
     "Preço": "R$100-R$200",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "CUCA POP",
+    "NOME": "CUCA POP",
     "Categoria": "Lanchonete",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "CUCA POP",
+    "NOME": "CUCA POP",
     "Categoria": "Lanchonete",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "MAGNOS BURGUER",
+    "NOME": "MAGNOS BURGUER",
     "Categoria": "Lanchonete",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "GIRAFFAS",
+    "NOME": "GIRAFFAS",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Janta",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "GIRAFFAS",
+    "NOME": "GIRAFFAS",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "GIRAFFAS",
+    "NOME": "GIRAFFAS",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "GIRAFFAS",
+    "NOME": "GIRAFFAS",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "DON PASTELLO",
+    "NOME": "DON PASTELLO",
     "Categoria": "Fast-food",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "DON PASTELLO",
+    "NOME": "DON PASTELLO",
     "Categoria": "Fast-food",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "DON PASTELLO",
+    "NOME": "DON PASTELLO",
     "Categoria": "Fast-food",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "DON PASTELLO",
+    "NOME": "DON PASTELLO",
     "Categoria": "Fast-food",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "KORBAN",
+    "NOME": "KORBAN",
     "Categoria": "Fast-food",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "REI DO HAMBURGUER",
+    "NOME": "REI DO HAMBURGUER",
     "Categoria": "Lanchonete",
     "Preço": "Até R$50",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "REI DO HAMBURGUER",
+    "NOME": "REI DO HAMBURGUER",
     "Categoria": "Lanchonete",
     "Preço": "Até R$50",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "TENDA DOS SABORES",
+    "NOME": "TENDA DOS SABORES",
     "Categoria": "Lanchonete",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "GENI MASSAS",
+    "NOME": "GENI MASSAS",
     "Categoria": "Restaurante",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Alta"
   },
   {
-    "Nome": "MARIAH",
-    "Categoria": "Restaurante",
-    "Preço": "R$100-R$200",
-    "Refeição": "Almoço",
-    "Localização": "Parte Alta"
-  },
-  {
-    "Nome": "MARIAH",
+    "NOME": "MARIAH",
     "Categoria": "Restaurante",
     "Preço": "R$100-R$200",
     "Refeição": "Almoço",
+    "Localização": "Parte Alta"
+  },
+  {
+    "NOME": "MARIAH",
+    "Categoria": "Restaurante",
+    "Preço": "R$100-R$200",
+    "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "JB PASSA",
+    "NOME": "JB PASSA",
     "Categoria": "Lanchonete",
     "Preço": "R$100-R$200",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "COMEDORIA JARAGUA",
+    "NOME": "COMEDORIA JARAGUA",
     "Categoria": "Restaurante",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "COMEDORIA JARAGUA",
+    "NOME": "COMEDORIA JARAGUA",
     "Categoria": "Restaurante",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "COOKIES CACAU",
+    "NOME": "COOKIES CACAU",
     "Categoria": "Cafeteria",
     "Preço": "R$50-R$100",
     "Refeição": "Almoço",
     "Localização": "Parte Baixa"
   },
   {
-    "Nome": "COOKIES CACAU",
+    "NOME": "COOKIES CACAU",
     "Categoria": "Cafeteria",
     "Preço": "R$50-R$100",
     "Refeição": "Janta",
