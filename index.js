@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
 const routes = require('./src/routes/routes.js');
-const cors = require('cors');
+const categorias = require('./src/routes/teste.js')
+
 
 
 // Configuração do middleware para o parsing do corpo das requisições
-app.use(cors());
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use((req, res, next) => {
@@ -16,6 +17,7 @@ app.use((req, res, next) => {
 })
 // Configuração das rotas
 app.use('/api', routes);
+app.use('/api', categorias);
 
 // Inicialização do servidor
 const PORT = process.env.PORT || 3001;
