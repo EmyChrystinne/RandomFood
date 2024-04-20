@@ -15,7 +15,7 @@ async function closeOpenConnections() {
  // Conectar ao banco de dados
  let connection = await oracledb.getConnection(dbConfig);
  openConnections.push(connection);
- if (connection)
+ if (connection != null)
  console.log('Conexão ao banco de dados estabelecida');
  else
  console.log('Conexão ao banco de dados falhou');
