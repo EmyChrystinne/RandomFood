@@ -22,28 +22,26 @@ async function closeOpenConnections() {
 
  // Consultas SQL para obter todas as categorias, preços, refeições e localizações
  let queryCategorias = 'SELECT * FROM categorias';
- let queryPreco = 'SELECT * FROM preco';
- let queryRefeicao = 'SELECT * FROM refeicao';
- let queryLocalizacao = 'SELECT * FROM localizacao';
+ //let queryPreco = 'SELECT * FROM preco';
+ //let queryRefeicao = 'SELECT * FROM refeicao';
+ //let queryLocalizacao = 'SELECT * FROM localizacao';
 
  // Executar as consultas
  const resultCategorias = await connection.execute(queryCategorias);
- const resultPreco = await connection.execute(queryPreco);
- const resultRefeicao = await connection.execute(queryRefeicao);
- const resultLocalizacao = await connection.execute(queryLocalizacao);
+ //const resultPreco = await connection.execute(queryPreco);
+ //const resultRefeicao = await connection.execute(queryRefeicao);
+ //const resultLocalizacao = await connection.execute(queryLocalizacao);
 
  // Fechar a conexão com o banco de dados
  await connection.close();
 
  // Extrair os dados dos resultados das consultas
  const categorias = resultCategorias.rows;
- const preco = resultPreco.rows;
- const refeicao = resultRefeicao.rows;
- const localizacao = resultLocalizacao.rows;
+//  const preco = resultPreco.rows;
+//  const refeicao = resultRefeicao.rows;
+//  const localizacao = resultLocalizacao.rows;
  console.log('Categorias:', categorias);
- console.log('preco:', preco); 
- console.log('refeicao:', refeicao);
- console.log('localizacao:', localizacao);
+ 
  
 }
 // Rota para obter todas as categorias
