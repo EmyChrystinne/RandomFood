@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const routes = require('./src/routes/routes.js');
-const categorias = require('./src/routes/teste.js')
+const categorias = require('./src/routes/banco.js')
 
 
 
