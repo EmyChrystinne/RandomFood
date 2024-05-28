@@ -26,35 +26,17 @@ router.get('/botoes', async (req, res) => {
   try {
     const data = await getDataFromPath('/');
     if (data) {
-      // Transformar os dados para o formato desejado
-      const categorias = Object.entries(data).map(([id, item]) => ({
+      // Transformar os dados em um array de objetos
+      const formattedData = Object.entries(data).map(([id, item]) => ({
         id,
-        Categoria: item.Categoria
-      }));
-      const precos = Object.entries(data).map(([id, item]) => ({
-        id,
-        Preço: item.Preço
-      }));
-      const localizacoes = Object.entries(data).map(([id, item]) => ({
-        id,
-        Localização: item.Localização
-      }));
-      const nomes = Object.entries(data).map(([id, item]) => ({
-        id,
-        NOME: item.NOME
-      }));
-      const refeicoes = Object.entries(data).map(([id, item]) => ({
-        id,
+        Categoria: item.Categoria,
+        Localização: item.Localização,
+        NOME: item.NOME,
+        Preço: item.Preço,
         Refeição: item.Refeição
       }));
 
-      res.json({ 
-        'Nome': nomes, 
-        'Categoria': categorias, 
-        'Preço': precos, 
-        'Localização': localizacoes, 
-        'Refeição': refeicoes 
-      });
+      res.json(formattedData);
     } else {
       res.status(404).json({ error: 'No data available' });
     }
