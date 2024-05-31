@@ -1,81 +1,122 @@
+const NodeCache = require("node-cache");
+const { getDataFromPath } = require("../routes/banco.js");
 
-const restaurantData = require('../data/restaurantData.json');
+const cache = new NodeCache({ stdTTL: 300 }); // TTL padrão de 300 segundos (5 minutos)
 
+// Função para buscar todos os restaurantes com cache
+const getAllRestaurants = async () => {
+  try {
+    const cacheKey = "allRestaurants";
+    let restaurants = cache.get(cacheKey);
 
+    if (!restaurants) {
+      const data = await getDataFromPath("/");
+      if (data) {
+        restaurants = formatData(data);
+        cache.set(cacheKey, restaurants); // Armazena no cache
+      } else {
+        throw new Error("No data available");
+      }
+    }
 
-// Função para buscar todos os restaurantes
-const getAllRestaurants = () => {
-  console.log('getAllRestaurants');
-  return restaurantData;
+    return restaurants;
+  } catch (error) {
+    console.error("Erro ao buscar todos os restaurantes:", error);
+    throw error;
+  }
 };
+
+// Função para formatar os dados obtidos
+function formatData(data) {
+  return Object.entries(data).map(([id, item]) => ({
+    id,
+    Categoria: item.Categoria,
+    Localização: item.Localização,
+    NOME: item.NOME,
+    Preço: item.Preço,
+    Refeição: item.Refeição,
+  }));
+}
 
 // Função para filtrar restaurantes por categoria
-const filterRestaurantsByCategory = (category) => {
-  console.log('filterRestaurantsByCategory');
-  return restaurantData.filter(restaurant => restaurant.CATEGORIA === category);
+const filterRestaurantsByCategory = async (category) => {
+  try {
+    const restaurants = await getAllRestaurants();
+    return restaurants.filter(
+      (restaurant) => restaurant.Categoria === category
+    );
+  } catch (error) {
+    console.error("Erro ao filtrar restaurantes por categoria:", error);
+    throw error;
+  }
 };
 
-// Função para filtrar restaurantes por PREÇO_MÉDIO
-const filterRestaurantsByPrice = (price) => {
-  console.log('filterRestaurantsByPrice');
-  return restaurantData.filter(restaurant => restaurant.PREÇO_MEDIO === price);
+// Função para filtrar restaurantes por preço
+const filterRestaurantsByPrice = async (price) => {
+  try {
+    const restaurants = await getAllRestaurants();
+    return restaurants.filter((restaurant) => restaurant.Preço === price);
+  } catch (error) {
+    console.error("Erro ao filtrar restaurantes por preço:", error);
+    throw error;
+  }
 };
 
 // Função para filtrar restaurantes por refeição
-const filterRestaurantsByMeal = (meal) => {
-  console.log('filterRestaurantsByMeal');
-  return restaurantData.filter(restaurant => restaurant.REFEIÇÃO === meal);
+const filterRestaurantsByMeal = async (meal) => {
+  try {
+    const restaurants = await getAllRestaurants();
+    return restaurants.filter((restaurant) => restaurant.Refeição === meal);
+  } catch (error) {
+    console.error("Erro ao filtrar restaurantes por refeição:", error);
+    throw error;
+  }
 };
 
-// Rota para filtrar restaurantes por localização
-const filterRestaurantsByLocation = (location) => {
-      
-      // Verifica se a localização selecionada é "BAIXA" ou "ALTA"
-      if (location === 'BAIXA') {
-        console.log('BAIXA');
-        // Filtra os restaurantes que têm localização "BAIXA" ou "TODAS"
-        const restaurantsByLocation = restaurantService.filterRestaurantsByLocation('BAIXA');
-        const restaurantsByLocationAll = restaurantService.filterRestaurantsByLocation('TODAS');
-        const filteredRestaurants = [...restaurantsByLocation, ...restaurantsByLocationAll];
-        res.json(filteredRestaurants);
-      } else if (location === 'ALTA') {
-        console.log('ALTA');
-        // Filtra os restaurantes que têm localização "ALTA" ou "TODAS"
-        const restaurantsByLocation = restaurantService.filterRestaurantsByLocation('ALTA');
-        const restaurantsByLocationAll = restaurantService.filterRestaurantsByLocation('TODAS');
-        const filteredRestaurants = [...restaurantsByLocation, ...restaurantsByLocationAll];
-        res.json(filteredRestaurants);
-      } else {
-        // Filtra os restaurantes apenas pela localização selecionada
-        const restaurantsByLocation = restaurantService.filterRestaurantsByLocation(location);
-        res.json(restaurantsByLocation);
-      }
-    } 
- 
+// Função para filtrar restaurantes por localização
+const filterRestaurantsByLocation = async (location) => {
+  try {
+    const restaurants = await getAllRestaurants();
+    if (location === "BAIXA" || location === "ALTA") {
+      return restaurants.filter(
+        (restaurant) =>
+          restaurant.Localização === location ||
+          restaurant.Localização === "TODAS"
+      );
+    } else {
+      return restaurants.filter(
+        (restaurant) => restaurant.Localização === location
+      );
+    }
+  } catch (error) {
+    console.error("Erro ao filtrar restaurantes por localização:", error);
+    throw error;
+  }
+};
 
 // Função para filtrar restaurantes por múltiplos filtros
-const filterRestaurants = (filters) => {
-    console.log('filterRestaurants');
-    return restaurantData.filter(restaurant => {
-      // Itera sobre cada filtro selecionado
+const filterRestaurants = async (filters) => {
+  try {
+    const restaurants = await getAllRestaurants();
+    return restaurants.filter((restaurant) => {
       for (const key in filters) {
-        // Verifica se o filtro não é "TODAS" e se o restaurante não corresponde ao filtro
-        if (filters[key] !== 'TODAS' && restaurant[key] !== filters[key]) {
-          // Se o restaurante não corresponder a um filtro, retorna falso para excluir da lista filtrada
+        if (filters[key] !== "TODAS" && restaurant[key] !== filters[key]) {
           return false;
         }
       }
-      // Se o restaurante corresponder a todos os filtros, retorna true para incluir na lista filtrada
       return true;
     });
-  };
-  
-  module.exports = {
-  filterRestaurants,
+  } catch (error) {
+    console.error("Erro ao filtrar restaurantes por múltiplos filtros:", error);
+    throw error;
+  }
+};
+
+module.exports = {
   getAllRestaurants,
   filterRestaurantsByCategory,
   filterRestaurantsByPrice,
   filterRestaurantsByMeal,
-  filterRestaurantsByLocation
+  filterRestaurantsByLocation,
+  filterRestaurants,
 };
-

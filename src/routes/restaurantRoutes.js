@@ -3,7 +3,7 @@ const router = express.Router();
 const restaurantService = require('../services/restaurantServices.js');
 
 // Rota para buscar uma seleção aleatória de restaurantes
-router.get('/restaurants/restaurantRoute', (req, res) => {
+router.get('/restaurantRoute', (req, res) => {
     try {
       const { route } = req.query; // Obtenha os dados da rota da query
       console.log('Rota:', route);
@@ -29,30 +29,3 @@ router.get('/restaurants/restaurantRoute', (req, res) => {
 });
 
 module.exports = router;
-
-//const cors = require('cors');
-// const express = require('express');
-// const router = express.Router();
-// const restaurantService = require('../services/restaurantServices.js');
-
-// // Rota para buscar uma seleção aleatória de restaurantes
-// router.get('/restaurants/restaurantRoute', (req, res) => {
-//     try {
-//       // Obtém o número total de restaurantes
-//       const filteringdRestaurants = restaurantService.getAllRestaurants().length;
-  
-//       // Gera um índice aleatório dentro do intervalo do número total de restaurantes
-//       const randomIndex = Math.floor(Math.random() * filteringdRestaurants);
-  
-//       // Obtém o restaurante aleatório com base no índice gerado
-//       const  filteredRestaurants= restaurantService.getAllRestaurants()[randomIndex];
-  
-//       // Retorna o restaurante aleatório como resposta
-//       res.json(filteredRestaurants);
-//     } catch (error) {
-//       console.error('Erro ao buscar seleção aleatória de restaurantes:', error);
-//       res.status(500).json({ message: 'Erro ao buscar seleção aleatória de restaurantes' });
-//     }
-//   });
-
-// module.exports = router;

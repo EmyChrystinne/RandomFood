@@ -1,14 +1,15 @@
-const express = require('express');
-const admin = require('firebase-admin');
+const express = require("express");
+const admin = require("firebase-admin");
 const router = express.Router();
-require('dotenv').config();
+require("dotenv").config();
 
 // Inicialize o Firebase Admin SDK com as credenciais de serviço
-const serviceAccount = require("../data/serviceAccountKey");
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
+
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://randomfoodapp-c286c-default-rtdb.firebaseio.com/'
+  databaseURL: process.env.FIREBASE_DATABASE_URL
 });
 
 // Referência para o Realtime Database
@@ -16,33 +17,41 @@ const db = admin.database();
 
 // Função para ler dados do Realtime Database no caminho especificado
 async function getDataFromPath(path) {
-  const ref = db.ref(path);
-  const snapshot = await ref.once('value');
-  return snapshot.val();
+  try {
+    const ref = db.ref(path);
+    const snapshot = await ref.once("value");
+    return snapshot.val();
+  } catch (error) {
+    console.error(`Erro ao acessar o caminho ${path}:`, error);
+    throw new Error("Erro ao obter dados do banco de dados");
+  }
+}
+
+// Função para formatar os dados obtidos
+function formatData(data) {
+  return Object.entries(data).map(([id, item]) => ({
+    id,
+    Categoria: item.Categoria,
+    Localização: item.Localização,
+    NOME: item.NOME,
+    Preço: item.Preço,
+    Refeição: item.Refeição,
+  }));
 }
 
 // Rota para obter dados do Realtime Database
-router.get('/botoes', async (req, res) => {
+router.get("/botoes", async (req, res) => {
   try {
-    const data = await getDataFromPath('/');
+    const data = await getDataFromPath("/");
     if (data) {
-      // Transformar os dados em um array de objetos
-      const formattedData = Object.entries(data).map(([id, item]) => ({
-        id,
-        Categoria: item.Categoria,
-        Localização: item.Localização,
-        NOME: item.NOME,
-        Preço: item.Preço,
-        Refeição: item.Refeição
-      }));
-
+      const formattedData = formatData(data);
       res.json(formattedData);
     } else {
-      res.status(404).json({ error: 'No data available' });
+      res.status(404).json({ error: "No data available" });
     }
   } catch (error) {
-    console.error('Erro ao obter dados:', error);
-    res.status(500).json({ error: 'Erro ao obter dados' });
+    console.error("Erro ao obter dados:", error);
+    res.status(500).json({ error: "Erro ao obter dados" });
   }
 });
 

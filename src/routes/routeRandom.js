@@ -3,9 +3,9 @@ const router = express.Router();
 const restaurantService = require('../services/restaurantServices.js');
 
 // Rota para retornar uma seleção aleatória de restaurantes
-router.get('/restaurants/random', (req, res) => {
+router.get('/random', async (req, res) => {
   try {
-    const randomRestaurants = restaurantService.getRandomRestaurants();
+    const randomRestaurants = await restaurantService.getRandomRestaurants();
     res.json(randomRestaurants);
   } catch (error) {
     console.error('Erro ao obter seleção aleatória de restaurantes:', error);
