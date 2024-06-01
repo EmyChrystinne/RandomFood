@@ -45,29 +45,6 @@ router.get("/random", async (req, res) => {
 });
 
 // Rota para filtrar um restaurante aleatório por vários filtros
-// router.get("/restaurants/filter", async (req, res) => {
-//   try {
-//     const { categoria, localizacao, preco, refeicao } = req.query; // Recebe os filtros da consulta
-
-//     // Cria um objeto contendo apenas os filtros definidos
-//     const filters = {};
-//     if (categoria) filters.categoria = categoria;
-//     if (localizacao) filters.localizacao = localizacao;
-//     if (preco) filters.preco = preco;
-//     if (refeicao) filters.refeicao = refeicao;
-
-//     // Obtém um restaurante aleatório com base nos filtros fornecidos
-//     const randomRestaurant = await getRandomRestaurant(filters);
-
-//     // Retorna o restaurante aleatório como resposta
-//     res.json(randomRestaurant);
-//   } catch (error) {
-//     console.error("Erro ao buscar restaurante aleatório:", error);
-//     res.status(500).json({ error: "Erro ao buscar restaurante aleatório" });
-//   }
-// });
-
-// Rota para filtrar um restaurante aleatório por vários filtros
 router.get("/restaurants/filter", async (req, res) => {
   try {
     const { categoria, localizacao, preco, refeicao } = req.query; // Recebe os filtros da consulta
@@ -89,8 +66,5 @@ router.get("/restaurants/filter", async (req, res) => {
     res.status(500).json({ error: "Erro ao buscar restaurante aleatório" });
   }
 });
-
-// Rota para obter um restaurante aleatório da rota atual
-router.get("/restaurants/restaurantRoute", async (req, res) => {});
 
 module.exports = router;
