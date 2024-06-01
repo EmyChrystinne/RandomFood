@@ -1,122 +1,132 @@
 const NodeCache = require("node-cache");
-const { getDataFromPath } = require("../routes/banco.js");
+const admin = require("firebase-admin");
 
-const cache = new NodeCache({ stdTTL: 300 }); // TTL padrão de 300 segundos (5 minutos)
+const cache = new NodeCache({ stdTTL: 300 });
 
-// Função para buscar todos os restaurantes com cache
-const getAllRestaurants = async () => {
+// Configurações
+const COLLECTION_NAME = "RandomFood";
+const CACHE_KEY = "allRestaurants";
+
+// Inicializa o Firebase Admin SDK
+const serviceAccount = require("../firebase/randomfoodapp-c286c-firebase-adminsdk-bxzl3-a5e235572b.json");
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://randomfoodapp-c286c-default-rtdb.firebaseio.com",
+});
+const db = admin.firestore();
+
+// Função para ler dados do Cloud Firestore na coleção especificada
+async function getDataFromCollection(collectionName) {
   try {
-    const cacheKey = "allRestaurants";
-    let restaurants = cache.get(cacheKey);
+    const snapshot = await db.collection(collectionName).get();
+    return snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+  } catch (error) {
+    console.error(`Erro ao acessar a coleção ${collectionName}:`, error);
+    throw new Error("Erro ao obter dados do banco de dados");
+  }
+}
 
+// Função para obter todos os restaurantes
+async function getAllRestaurants() {
+  try {
+    let restaurants = cache.get(CACHE_KEY);
     if (!restaurants) {
-      const data = await getDataFromPath("/");
-      if (data) {
-        restaurants = formatData(data);
-        cache.set(cacheKey, restaurants); // Armazena no cache
-      } else {
-        throw new Error("No data available");
-      }
+      const data = await getDataFromCollection(COLLECTION_NAME);
+      restaurants = formatData(data);
+      cache.set(CACHE_KEY, restaurants);
     }
-
     return restaurants;
   } catch (error) {
     console.error("Erro ao buscar todos os restaurantes:", error);
     throw error;
   }
-};
+}
 
-// Função para formatar os dados obtidos
+// Função para formatar os dados dos restaurantes
 function formatData(data) {
-  return Object.entries(data).map(([id, item]) => ({
-    id,
-    Categoria: item.Categoria,
-    Localização: item.Localização,
-    NOME: item.NOME,
-    Preço: item.Preço,
-    Refeição: item.Refeição,
+  return data.map((item) => ({
+    id: item.id,
+    categoria: item.categoria,
+    localizacao: item.localização,
+    nome: item.nome,
+    preco: item.preço,
+    refeicao: item.refeição,
   }));
 }
 
-// Função para filtrar restaurantes por categoria
-const filterRestaurantsByCategory = async (category) => {
+//Tratativa de padronização de nome de campo
+function standardizeFieldNames(data) {
+  return data.map((item) => ({
+    ...item,
+    preço: item.preco,
+    categoria: item.categoria,
+    localização: item.localizacao,
+    refeição: item.refeicao,
+  }));
+}
+
+// Função para filtrar restaurantes
+async function filterRestaurants(filters) {
   try {
     const restaurants = await getAllRestaurants();
-    return restaurants.filter(
-      (restaurant) => restaurant.Categoria === category
+    return restaurants.filter((restaurant) =>
+      matchesFilters(restaurant, filters)
     );
   } catch (error) {
-    console.error("Erro ao filtrar restaurantes por categoria:", error);
+    console.error("Erro ao filtrar restaurantes:", error);
     throw error;
   }
-};
+}
+// Verifica se um restaurante atende a todos os filtros
+function matchesFilters(restaurant, filters) {
+  // Padroniza os nomes dos campos no objeto restaurant
+  restaurant = standardizeFieldNames([restaurant])[0];
 
-// Função para filtrar restaurantes por preço
-const filterRestaurantsByPrice = async (price) => {
-  try {
-    const restaurants = await getAllRestaurants();
-    return restaurants.filter((restaurant) => restaurant.Preço === price);
-  } catch (error) {
-    console.error("Erro ao filtrar restaurantes por preço:", error);
-    throw error;
-  }
-};
-
-// Função para filtrar restaurantes por refeição
-const filterRestaurantsByMeal = async (meal) => {
-  try {
-    const restaurants = await getAllRestaurants();
-    return restaurants.filter((restaurant) => restaurant.Refeição === meal);
-  } catch (error) {
-    console.error("Erro ao filtrar restaurantes por refeição:", error);
-    throw error;
-  }
-};
-
-// Função para filtrar restaurantes por localização
-const filterRestaurantsByLocation = async (location) => {
-  try {
-    const restaurants = await getAllRestaurants();
-    if (location === "BAIXA" || location === "ALTA") {
-      return restaurants.filter(
-        (restaurant) =>
-          restaurant.Localização === location ||
-          restaurant.Localização === "TODAS"
-      );
-    } else {
-      return restaurants.filter(
-        (restaurant) => restaurant.Localização === location
-      );
-    }
-  } catch (error) {
-    console.error("Erro ao filtrar restaurantes por localização:", error);
-    throw error;
-  }
-};
-
-// Função para filtrar restaurantes por múltiplos filtros
-const filterRestaurants = async (filters) => {
-  try {
-    const restaurants = await getAllRestaurants();
-    return restaurants.filter((restaurant) => {
-      for (const key in filters) {
-        if (filters[key] !== "TODAS" && restaurant[key] !== filters[key]) {
+  for (const key in filters) {
+    const filterValue = filters[key];
+    if (filterValue !== "TODAS") {
+      if (key === "categoria" || key === "preco") {
+        if (restaurant[key] !== filterValue) {
+          return false;
+        }
+      } else if (Array.isArray(restaurant[key])) {
+        if (!restaurant[key].includes(filterValue)) {
+          return false;
+        }
+      } else {
+        if (restaurant[key] !== filterValue) {
           return false;
         }
       }
-      return true;
-    });
+    }
+  }
+  return true;
+}
+
+// Função para obter um restaurante aleatório com base nos filtros
+async function getRandomRestaurant(filters) {
+  try {
+    const filteredRestaurants = await filterRestaurants(filters);
+
+    if (filteredRestaurants.length > 0) {
+      const randomIndex = Math.floor(
+        Math.random() * filteredRestaurants.length
+      );
+      return filteredRestaurants[randomIndex];
+    } else {
+      throw new Error(
+        "Nenhum restaurante encontrado com base nos filtros fornecidos"
+      );
+    }
   } catch (error) {
-    console.error("Erro ao filtrar restaurantes por múltiplos filtros:", error);
+    console.error("Erro ao buscar restaurante aleatório:", error);
     throw error;
   }
-};
+}
 
 module.exports = {
   getAllRestaurants,
-  filterRestaurantsByCategory,
-  filterRestaurantsByPrice,
-  filterRestaurantsByMeal,
-  filterRestaurantsByLocation,
   filterRestaurants,
+  getDataFromCollection,
+  getRandomRestaurant,
 };

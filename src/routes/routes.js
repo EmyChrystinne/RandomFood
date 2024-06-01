@@ -1,98 +1,96 @@
-const express = require('express');
-const router = express.Router();
-const restaurantService = require('../services/restaurantServices.js');
+const express = require("express");
 
-let routeData = [];
+const router = express.Router();
+require("dotenv").config();
+const {
+  getAllRestaurants,
+  filterRestaurants,
+  getDataFromCollection,
+  getRandomRestaurant,
+} = require("../services/restaurantServices");
+
+// Rota para obter todos os restaurantes da coleção "Random Food"
+router.get("/restaurants", async (req, res) => {
+  try {
+    const data = await getDataFromCollection("RandomFood");
+    if (data.length > 0) {
+      res.json(data);
+    } else {
+      res
+        .status(404)
+        .json({ error: "Não há dados disponíveis na coleção Random Food" });
+    }
+  } catch (error) {
+    console.error("Erro ao obter dados da coleção Random Food:", error);
+    res.status(500).json({ error: "Erro ao obter dados" });
+  }
+});
 
 // Rota para buscar uma seleção aleatória de restaurantes
-router.get('/random', async (req, res) => {
+router.get("/random", async (req, res) => {
   try {
-    // Obtém o número total de restaurantes
-    const totalRestaurants = (await restaurantService.getAllRestaurants()).length;
+    // Obtém todos os restaurantes da coleção "RandomFood"
+    const restaurants = await getDataFromCollection("RandomFood");
 
-    // Gera um índice aleatório dentro do intervalo do número total de restaurantes
-    const randomIndex = Math.floor(Math.random() * totalRestaurants);
+    // Seleciona aleatoriamente um restaurante da lista
+    const randomIndex = Math.floor(Math.random() * restaurants.length);
+    const randomRestaurant = restaurants[randomIndex];
 
-    // Obtém o restaurante aleatório com base no índice gerado
-    const randomRestaurant = (await restaurantService.getAllRestaurants())[randomIndex];
+    // Retorna o restaurante selecionado como resposta
+    res.json(randomRestaurant);
+  } catch (error) {
+    console.error("Erro ao buscar restaurantes aleatórios:", error);
+    res.status(500).json({ error: "Erro ao buscar restaurantes aleatórios" });
+  }
+});
+
+// Rota para filtrar um restaurante aleatório por vários filtros
+// router.get("/restaurants/filter", async (req, res) => {
+//   try {
+//     const { categoria, localizacao, preco, refeicao } = req.query; // Recebe os filtros da consulta
+
+//     // Cria um objeto contendo apenas os filtros definidos
+//     const filters = {};
+//     if (categoria) filters.categoria = categoria;
+//     if (localizacao) filters.localizacao = localizacao;
+//     if (preco) filters.preco = preco;
+//     if (refeicao) filters.refeicao = refeicao;
+
+//     // Obtém um restaurante aleatório com base nos filtros fornecidos
+//     const randomRestaurant = await getRandomRestaurant(filters);
+
+//     // Retorna o restaurante aleatório como resposta
+//     res.json(randomRestaurant);
+//   } catch (error) {
+//     console.error("Erro ao buscar restaurante aleatório:", error);
+//     res.status(500).json({ error: "Erro ao buscar restaurante aleatório" });
+//   }
+// });
+
+// Rota para filtrar um restaurante aleatório por vários filtros
+router.get("/restaurants/filter", async (req, res) => {
+  try {
+    const { categoria, localizacao, preco, refeicao } = req.query; // Recebe os filtros da consulta
+
+    // Cria um objeto contendo apenas os filtros definidos
+    const filters = {};
+    if (categoria) filters.categoria = categoria;
+    if (localizacao) filters.localizacao = localizacao;
+    if (preco) filters.preco = preco;
+    if (refeicao) filters.refeicao = refeicao;
+
+    // Obtém um restaurante aleatório com base nos filtros fornecidos
+    const randomRestaurant = await getRandomRestaurant(filters);
 
     // Retorna o restaurante aleatório como resposta
     res.json(randomRestaurant);
   } catch (error) {
-    console.error('Erro ao buscar seleção aleatória de restaurantes:', error);
-    res.status(500).json({ message: 'Erro ao buscar seleção aleatória de restaurantes' });
-  }
-});
-
-// Rota para buscar todos os restaurantes
-router.get('/restaurants', async (req, res) => {
-  try {
-    const allRestaurants = await restaurantService.getAllRestaurants();
-    routeData = allRestaurants; // Atualiza routeData com todos os restaurantes
-    res.json(allRestaurants);
-  } catch (error) {
-    console.error('Erro ao buscar todos os restaurantes:', error);
-    res.status(500).json({ message: 'Erro ao buscar todos os restaurantes' });
-  }
-});
-  
-// Rota para filtrar restaurantes por vários filtros
-router.get('/restaurants/filter', async (req, res) => {
-  try {
-    // Extrair os parâmetros de filtro da query string da URL
-    const { Categoria, Refeição, Preço, Localização } = req.query;
-
-    // Inicializar variável para armazenar os restaurantes filtrados
-    let filteredRestaurants = await restaurantService.getAllRestaurants();
-
-    // Aplicar filtro por categoria, se fornecido
-    if (Categoria) {
-      const categories = Categoria.split(','); // Se houver múltiplas categorias separadas por vírgula
-      filteredRestaurants = filteredRestaurants.filter(restaurant => categories.includes(restaurant.Categoria));
-    }
-
-    // Aplicar filtro por refeição, se fornecido
-    if (Refeição) {
-      const meals = Refeição.split(','); // Se houver múltiplas refeições separadas por vírgula
-      filteredRestaurants = filteredRestaurants.filter(restaurant => meals.includes(restaurant.Refeição));
-    }
-
-    // Aplicar filtro por PREÇO_MÉDIO, se fornecido
-    if (Preço) {
-      const Preços = Preço.split(','); // Se houver múltiplos preços separados por vírgula
-      filteredRestaurants = filteredRestaurants.filter(restaurant => Preços.includes(restaurant.Preço)); // Verifique se o preço está incluído na lista de preços fornecida
-    }
-
-    // Aplicar filtro por localização, se fornecido
-    if (Localização) {
-      const Localizaçãos = Localização.split(','); // Se houver múltiplas localizações separadas por vírgula
-      filteredRestaurants = filteredRestaurants.filter(restaurant => Localização.includes(restaurant.Localização));
-    }
-
-    // Atualiza routeData com os restaurantes filtrados
-    routeData = filteredRestaurants;
-
-    // Retornar os restaurantes filtrados
-    res.json(filteredRestaurants);
-  } catch (error) {
-    console.error('Erro ao filtrar restaurantes:', error);
-    res.status(500).json({ message: 'Erro ao filtrar restaurantes' });
+    console.error("Erro ao buscar restaurante aleatório:", error);
+    res.status(500).json({ error: "Erro ao buscar restaurante aleatório" });
   }
 });
 
 // Rota para obter um restaurante aleatório da rota atual
-router.get('/restaurants/restaurantRoute', (req, res) => {
-  try {
-    // Selecione aleatoriamente um objeto da rota
-    const randomIndex = Math.floor(Math.random() * routeData.length);
-    const randomRestaurant = routeData[randomIndex];
-
-    // Retorna o restaurante aleatório como resposta
-    res.json(randomRestaurant);
-  } catch (error) {
-    console.error('Erro ao buscar seleção aleatória de restaurantes:', error);
-    res.status(500).json({ message: 'Erro ao buscar seleção aleatória de restaurantes' });
-  }
-});
+router.get("/restaurants/restaurantRoute", async (req, res) => {});
 
 module.exports = router;
