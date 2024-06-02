@@ -1,14 +1,14 @@
 const NodeCache = require("node-cache");
 const admin = require("firebase-admin");
 
-const cache = new NodeCache({ stdTTL: 300 });
+const cache = new NodeCache({ stdTTL: 1000 });
 
 // Configurações
 const COLLECTION_NAME = "RandomFood";
 const CACHE_KEY = "allRestaurants";
 
 // Inicializa o Firebase Admin SDK
-const serviceAccount = require("../firebase/randomfoodapp-c286c-firebase-adminsdk-bxzl3-a5e235572b.json");
+const serviceAccount = require("../firebase/randomfoodapp-c286c-firebase-adminsdk-bxzl3-4a00dc9fd9.json");
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://randomfoodapp-c286c-default-rtdb.firebaseio.com",

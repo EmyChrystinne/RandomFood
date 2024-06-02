@@ -5,7 +5,7 @@
 /node_modules
 /.pnp
 .pnp.js
-/src/firebase/randomfoodapp-c286c-firebase-adminsdk-bxzl3-a5e235572b.json
+/src/firebase/randomfoodapp-c286c-firebase-adminsdk-bxzl3-4a00dc9fd9.json
 
 # testing
 /coverage
@@ -20,7 +20,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
-/src/firebase/randomfoodapp-c286c-firebase-adminsdk-bxzl3-a5e235572b.json
+/src/firebase/randomfoodapp-c286c-firebase-adminsdk-bxzl3-4a00dc9fd9.json
 
 npm-debug.log*
 yarn-debug.log*
