@@ -113,10 +113,6 @@ async function getRandomRestaurant(filters) {
         Math.random() * filteredRestaurants.length
       );
       return filteredRestaurants[randomIndex];
-    } else {
-      throw new Error(
-        "Nenhum restaurante encontrado com base nos filtros fornecidos"
-      );
     }
   } catch (error) {
     console.error("Erro ao buscar restaurante aleatório:", error);
