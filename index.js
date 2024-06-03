@@ -1,6 +1,6 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const routes = require('./src/routes/routes.js');
+const router = require("./src/routes/routes");
 const cors = require('cors');
 
 
@@ -14,8 +14,9 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // Headers permitidos
   next();
 })
+
 // Configuração das rotas
-app.use('/api', routes);
+app.use("/api/", router); // Use o router, não o routes diretamente
 
 // Inicialização do servidor
 const PORT = process.env.PORT || 3001;

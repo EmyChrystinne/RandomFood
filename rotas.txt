@@ -1,0 +1,7 @@
+http://localhost:3001/api/restaurants/ = Lista todos restaurantes cadastrados
+http://localhost:3001/api/random/ = Lista um restaurante aleatoriamente entre todos cadastrados
+http://localhost:3001/api/restaurants/filter? = Lista de restaurantes baseados em filtros
+    http://localhost:3001/api/restaurants/filter?refeicao=XXXXXXXXX&localizacao=XXXXXXXXX&preco=XXXXXXXXX&categoria=XXXXXXXXXXX   (alterar conforme for)
+
+    Exemplo: 
+    http://localhost:3001/api/restaurants/filter?categoria=Lanchonete&preco=At%C3%A9%20R%2450&localizacao=Parte%20Baixa
