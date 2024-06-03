@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const router = require("./src/routes/routes");
 const cors = require('cors');
+require('dotenv').config();
+
 
 
 // Configuração do middleware para o parsing do corpo das requisições
